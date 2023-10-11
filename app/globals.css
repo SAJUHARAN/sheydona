@@ -384,6 +384,7 @@ margin-top: 1.25rem;
   width: 100%;
   height: 46rem; /* Ensure the container takes at least the full viewport height on all devices */
  }
+ /* light purple backgorund */
  .background{
   position: absolute;
   left: 0;
@@ -397,6 +398,7 @@ margin-top: 1.25rem;
   bottom: 0%;
  }
  /* images */
+ 
  .img {
   position: absolute;
   top: 0;
