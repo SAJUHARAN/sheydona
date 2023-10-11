@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+/* styles.module.css */
+.image1_container {
+  position: relative;
+  display: flex;
+  text-align: left;
+  width: 100%;
+  max-width: 100pc;
+  align-items: flex-start; /* Adjust the width as needed */
+}
+.text-overlay h3 {
+  font-size: 30px;
+  position: absolute;
+  left: -240px; /* Adjust the left percentage as needed */
+  top: -10pc;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow if text is too long */
+  text-overflow: ellipsis; /* Show ellipsis (...) if text overflows container */
+}
+
+
+@media (max-width: 768px) {
+  .text-overlay h3 {
+    font-size: 6px;
+    position: absolute;
+    left: -85px; /* Adjust the left percentage as needed */
+    top: -10pc;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis;
+    
+  }
+}
+@media (max-width: 1199px) {
+  .text-overlay h3 {
+    font-size: 18px;
+    position: absolute;
+    left: -115px; /* Adjust the left percentage as needed */
+    top: -12pc;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis;
+    
+  }
+}
+.text-overlay h4 {
+  font-size: 60px;
+  position: absolute;
+  left: 150px; /* Adjust the left percentage as needed */
+  top: -10pc;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Show ellipsis (...) if text overflows container */
+}
+@media (max-width: 768px) {
+  .text-overlay h4  {
+    font-size: 8px;
+    position: absolute;
+    left: -28px; /* Adjust the left percentage as needed */
+    top: -11pc;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 1199px) {
+  .text-overlay h4 {
+    font-size: 28px;
+    position: absolute;
+    left: 28px; /* Adjust the left percentage as needed */
+    top: -15pc;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; 
+  }
+}
+.text-overlay h5 {
+  font-size: 12px;
+  position: absolute;
+  left: 170px; /* Adjust the left percentage as needed */
+  top: 1pc;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow if text is too long */
+  text-overflow: ellipsis; /* Show ellipsis (...) if text overflows container */
+}
+@media (max-width: 768px) {
+  .text-overlay h5  {
+    font-size: 5px;
+    position: absolute;
+    left: 10px; /* Adjust the left percentage as needed */
+    top: -7pc;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 1199px) {
+  .text-overlay h5  {
+    font-size: 10px;
+    position: absolute;
+    left: 88px; /* Adjust the left percentage as needed */
+    top: -7pc;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis;
+  }
+}
+
+.text-overlay h6 {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 50pc;  /* Adjust the left percentage as needed */
+  top: -8pc;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow if text is too long */
+  text-overflow: ellipsis; /* Show ellipsis (...) if text overflows container */
+}
+@media (max-width: 768px) {
+  .text-overlay h6  {
+    font-size: 6px;
+    position: absolute;
+    margin-left: 12pc;  /* Adjust the left percentage as needed */
+    top: -8pc;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; 
+    
+  }
+}
+@media (max-width: 1199px) {
+  .text-overlay h6  {
+    font-size: 14px;
+    position: absolute;
+    margin-left: 28pc;  /* Adjust the left percentage as needed */
+    top: -14pc;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis;  
+  }
+}
+.image-container {
+  position: relative;
+  display: flex;
+  text-align: left;
+  width: 100%;
+  max-width: 100pc;
+  align-items: flex-start; /* Adjust the width as needed */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  font-size: 60px;
+  position: absolute;
+  left:30%;
+  top:55%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .text-overlay  {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    left: 40%; /* Center horizontally on smaller screens */
+    top: 100%; /* Center vertically on smaller screens */
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 991px) {
+  .text-overlay {
+    font-size: 25px;
+    left: 25%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 1199px) {
+  .text-overlay {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    left: 30%; /* Center horizontally on smaller screens */
+    top: 70%; /* Center vertically on smaller screens */
+    transform: translate(-50%, -50%);
+  }
+}
+
+.subhead {
+  font-size: 30px;
+  font-weight: normal; 
+  margin: 0; 
+}
+@media (max-width: 767px) {
+  .subhead  {
+    font-size: 10px;
+    font-weight: normal; 
+    margin: 0; 
+   
+  }
+}
+@media (max-width: 991px) {
+  .subhead  {
+    font-size: 10px;
+    font-weight: normal; 
+    margin: 0; 
+   
+  }
+}
+@media (max-width: 1199px){
+  .subhead  {
+    font-size: 10px;
+    font-weight: normal; 
+    margin: 0; 
+   
+  }
+}
+.ltext {
+  font-size: 20px; 
+  font-weight: normal;
+  margin-top: 80px;
+}
+@media (max-width: 767px) {
+  .ltext  {
+    font-size: 20px; 
+    font-weight: normal;
+    margin-top: 80px;
+}
+}
+@media (max-width: 991px) {
+  .ltext {
+    font-size: 10px; 
+    font-weight: normal;
+    margin-top: 10px;  
+   
+  }
+}
+@media (max-width: 1199px){
+  .ltext{
+    font-size: 5px; 
+    font-weight: normal;
+    margin-top: 10px;
+  }
+}
+
+.ebutton {
+  color: white;
+  background-color: transparent;
+  min-width: 130px;
+  padding: 1%;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-right: 70px;
+}
+
+
+
+
+  
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-6 px-6 outline-none;
+}
+/* END: General styles */
+
+/* START: Hero styles */
+
+.legacy__tittle {
+font-size: 2.25rem; /* Equivalent to text-4xl in Tailwind CSS */
+font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+margin-top: 1.25rem;
+  
+}
+@media (max-width: 576px) {
+  .legacy__tittle  {
+  font-size: 1px; /* Adjust font size for even smaller screens */
+  margin-top: 0.5rem; /* Adjust margin for even smaller screens */
+}
+}
+@media (max-width: 767px) {
+  .legacy__tittle  {
+    font-size: 20px; 
+    font-weight: normal;
+    margin-top: 80px;
+}
+}
+@media (max-width: 991px) {
+  .legacy__tittle {
+    font-size: 10px; 
+    font-weight: normal;
+    margin-top: 10px;  
+   
+  }
+}
+@media (max-width: 1280px){
+  .legacy__tittle{
+    font-size: 25px; 
+    font-weight: normal;
+    margin-top: 10px;
+  }
+}
+
+
+.legacy__subtittle {
+  font-size: 1rem;  
+  margin-top: 1rem;
+}
+
+
+.legacy__image-container {
+  background-color: rgb(91, 12, 137); /* Replace 'your-color-here' with your desired background color */   
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 46rem; /* Ensure the container takes at least the full viewport height on all devices */
+ }
+ .background{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: rgb(215, 189, 227); /* Replace with your desired background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10rem; 
+  bottom: 0%;
+ }
+ .img {
+  position: absolute;
+  top: 0;
+  left:40%;
+  max-height: 100%;
+  object-fit: cover;
+}
+ .img2, .img3, .img4 {
+  max-width: 50px; /* Adjust the maximum width of the images as needed */
+  height: auto; /* Maintain the aspect ratio of the images */
+  margin-right:60px;
+}
+@media (max-width: 768px) {
+  .legacy__image-container {
+    height: 25rem; /* Adjust the container height for smaller screens if necessary */
+  }
+  .img{
+  position: absolute;
+  top: 4pc;
+  left:25%;
+  max-height: 70%;
+  object-fit: cover;
+  }
+
+  .img2, .img3, .img4 {
+    margin-top: -20%;
+    max-width: 20px; /* Adjust the maximum width for smaller screens */
+    margin-right:10px; /* Adjust the margin between images for smaller screens */
+  }
+}
+ .text1-overlay {
+  font-size: 0px;
+  position: absolute;
+  left:30%;
+  top:55%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+ }
+
+ @media (max-width: 1199px) {
+  .legacy__image-container {
+    height: 35rem; /* Adjust the container height for smaller screens if necessary */
+  }
+  .img{
+  position: absolute;
+  top: 4pc;
+  left: 40%;
+  max-height: 82%;
+  object-fit: cover;
+  }
+
+  .img2, .img3, .img4 {
+    margin-top: -20%;
+    max-width: 30px; /* Adjust the maximum width for smaller screens */
+    margin-right:10px; /* Adjust the margin between images for smaller screens */
+  }
+}
+ .text1-overlay {
+  font-size: 0px;
+  position: absolute;
+  left:30%;
+  top:55%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+ }
+
+
+
+.legacy__image {
+  @apply relative xl:w-full w-[90%] xl:h-[90vh] h-[520px] top-4 z-0; 
+
+ }
+
+
+/* END: Hero styles */
+
+/* START: Home styles */
+
+.home__text-container {
+  @apply flex flex-col items-start justify-start gap-y-2.5 text-black-100;
+}
+
+.home__filters {
+  @apply mt-12 w-full flex-between items-center flex-wrap gap-5;
+}
+
+.home__filter-container {
+  @apply flex justify-start flex-wrap items-center gap-2;
+}
+
+.home__cars-wrapper {
+  @apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
+}
+
+.home__error-container {
+  @apply mt-16 flex justify-center items-center flex-col gap-2;
+}
+/* END: Home styles */
+
+/* START: Car Card styles */
+.car-card {
+  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl;
+}
+
+.car-card__content {
+  @apply w-full flex justify-between items-start gap-2;
+}
+
+.car-card__content-title {
+  @apply text-[22px] leading-[26px] font-bold capitalize;
+}
+
+.car-card__price {
+  @apply flex mt-6 text-[32px] leading-[38px] font-extrabold;
+}
+
+.car-card__price-dollar {
+  @apply self-start text-[14px] leading-[17px] font-semibold;
+}
+
+.car-card__price-day {
+  @apply self-end text-[14px] leading-[17px] font-medium;
+}
+
+.car-card__image {
+  @apply relative w-full h-40 my-3 object-contain;
+}
+
+.car-card__icon-container {
+  @apply flex group-hover:invisible w-full justify-between text-grey;
+}
+
+.car-card__icon {
+  @apply flex flex-col justify-center items-center gap-2;
+}
+
+.car-card__icon-text {
+  @apply text-[14px] leading-[17px];
+}
+
+.car-card__btn-container {
+  @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
+}
+/* END: Car Card styles */
+
+/* START: Car Details styles */
+.car-details__dialog-panel {
+  @apply relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5;
+}
+
+.car-details__close-btn {
+  @apply absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full;
+}
+
+.car-details__main-image {
+  @apply relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg;
+}
+/* END: Car Details styles */
+
+/* START: Custom Filter styles */
+.custom-filter__btn {
+  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-blue-600 py-2 px-3 text-left shadow-md sm:text-sm border;
+}
+
+
+/* END: Custom Filter styles */
+
+/* START: Footer styles */
+.footer {
+  @apply flex flex-col text-black-100  mt-5 border-t border-gray-100;
+}
+
+.footer__links-container {
+  @apply flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10;
+}
+
+.footer__rights {
+  @apply flex flex-col justify-start items-start gap-6;
+}
+
+.footer__links {
+  @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
+}
+
+.footer__link {
+  @apply flex flex-col gap-6 text-base min-w-[170px];
+}
+
+.footer__copyrights {
+  @apply flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10;
+}
+
+.footer__copyrights-link {
+  @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
+}
+/* END: Footer styles */
+
+/* START: searchbar styles */
+.searchbar {
+  @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
+}
+
+.searchbar__item {
+  @apply flex-1 max-sm:w-full flex justify-start items-center relative;
+}
+
+.searchbar__input {
+  @apply w-full h-[48px] pl-12 p-4 bg-light-white rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm;
+}
+/* END: searchbar styles */
+
+/* START: search manufacturer styles */
+.search-manufacturer {
+  @apply flex-1 max-sm:w-full flex justify-start items-center;
+}
+
+.search-manufacturer__input {
+  @apply w-full h-[48px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-light-white outline-none cursor-pointer text-sm;
+}
+
+.search-manufacturer__options {
+  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+}
+
+.search-manufacturer__option {
+  @apply cursor-default select-none py-2 pl-10 pr-4;
+}
+/* END: search manufacturer styles */
